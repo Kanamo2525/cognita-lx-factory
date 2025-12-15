@@ -3,6 +3,8 @@ import { Header } from './components/Header';
 import { WorkflowMatrix } from './components/WorkflowMatrix';
 import { DecisionTree } from './components/DecisionTree';
 import { Recommendation } from './components/Recommendation';
+import { ToolsEvaluation } from './components/ToolsEvaluation';
+import { ToolsVisualization } from './components/ToolsVisualization';
 import { ErrorBoundary } from './components/ErrorBoundary';
 
 function App() {
@@ -16,6 +18,10 @@ function App() {
         return <DecisionTree />;
       case 'recommendation':
         return <Recommendation />;
+      case 'evaluation':
+        return <ToolsEvaluation />;
+      case 'benchmark':
+        return <ToolsVisualization />;
       default:
         return <WorkflowMatrix />;
     }

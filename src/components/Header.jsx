@@ -3,7 +3,9 @@ import React from 'react';
 const tabs = [
   { id: 'matrix', label: 'Matrice', icon: 'Grid' },
   { id: 'decision', label: 'Arbre de Decision', icon: 'GitBranch' },
-  { id: 'recommendation', label: 'Recommandation', icon: 'Sparkles' }
+  { id: 'recommendation', label: 'Recommandation', icon: 'Sparkles' },
+  { id: 'evaluation', label: 'Fiches Outils', icon: 'FileText' },
+  { id: 'benchmark', label: 'Benchmark', icon: 'BarChart' }
 ];
 
 export function Header({ activeTab, onTabChange }) {
